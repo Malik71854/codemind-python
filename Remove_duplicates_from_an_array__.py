@@ -1,0 +1,5 @@
+n=int(input())
+l=list(map(int,input().split()))
+s=set(l)
+l1=list(s)
+print(*l1)
