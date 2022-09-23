@@ -1,16 +1,19 @@
-from math import *
-def isprime(n):
-    if n==0 or n==1:
+import math
+def prime(n):
+    if n==1:
         return False
     else:
-        for i in range(2,int(sqrt(n))+1):
-            if n%i==0:
+        e =int(math.sqrt(n))
+        for j in range(2,e+1):
+            if n%j==0:
                 return False
         return True
-m=int(input())
+            
 n=int(input())
+m=int(input())
 c=0
-for i in range(m,n+1):
-    if isprime(i):
+for i in range(n,m+1):
+    if(prime(i)):
         c+=1
 print(c)
+    
