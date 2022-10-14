@@ -8,10 +8,10 @@ def prime(j):
 n=int(input())
 l=[]
 cnt=0
-for k in range(2,n):
+for k in range(1,n+1):
     if n%k==0:
         l.append(k)
 for j in l:
     if not prime(j):
         cnt+=1
-print(cnt+2)
+print(cnt)
